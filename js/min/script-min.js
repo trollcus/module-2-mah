@@ -1,6 +1,14 @@
-/*This is a multiline comment in JavaScript
-comments are used to describe why you do things*/
-//This is a single line comment
-console.log('Script running');
+if (document.readyState != 'loading'){
+  onDocumentReady();
+} else {
+  document.addEventListener('DOMContentLoaded', onDocumentReady);
+}
+
+
+function onDocumentReady() {
+  console.log('Document ready.');
+  var scene = document.getElementById('scene');
+  var parallaxInstance = new Parallax(scene);
+}
 
 

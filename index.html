@@ -2,13 +2,27 @@
 <html>
   <head>
     <title>Starter Skeleton</title>
-    <link rel="stylesheet" href="style.css"></link>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/style.css"></link>
   </head>
   <body>
-    <!--A comment in html looks like this single or multiline-->
-    <div>
-      <p>A starter kit for lecture 3</p>
+    <div id="scene" data-limit-x="50">
+      <div class="left object" data-depth="20" >My first Layer!</div>
     </div>
-    <script src="script.js"></script>
+    <div id="scene1" data-limit-y="50">
+      <div class="top object" data-depth="20">My second Layer!</div>
+    </div>
+    <div id="scene2" data-limit-y="45">
+      <div class="bottom object" data-depth="20">My third Layer!</div>
+    </div>
+    <div id="scene3" data-limit-x="50">
+      <div class="right object" data-depth="20">My fourth Layer!</div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+
+    <script src="parallax.js"></script>
+
+    <script src="/js/script.js"></script>
   </body>
 </html>
