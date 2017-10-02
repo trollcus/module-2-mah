@@ -1,0 +1,25 @@
+#myElement {
+    background: blue;
+      height: 140px;
+      width: 140px;
+      left: 30px; top: 30px;
+      position: absolute;
+      font: 25px Helvetica, Arial, sans-serif;
+      color: white;
+      line-height: 140px;
+      text-align: center;
+      
+  }
+  #myElement2 {
+    background: #7AFF3F;
+      height: 140px;
+      width: 140px;
+      left: 300px; top: 300px;
+      position: absolute;
+      font: 25px Helvetica, Arial, sans-serif;
+      color: white;
+      line-height: 140px;
+      text-align: center;
+  }
+
+ 

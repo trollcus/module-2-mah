@@ -4,13 +4,38 @@ body {
   width: 100vw;
   overflow: hidden; }
 
+.overlay {
+  height: 80vh !important;
+  width: 80vw !important;
+  left: 10vw !important;
+  top: 10vh !important;
+  background-color: rgba(0, 0, 0, 0.45);
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  border-radius: 15px; }
+
+#back {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background-image: url("../test.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
 .object {
   padding: 10em;
   width: 10em;
   height: 10em;
   position: absolute;
   -webkit-transition: 0.2s;
-  transition: 0.2s; }
+  transition: 0.2s;
+  z-index: 100; }
   .object:hover {
     background-color: pink; }
 
